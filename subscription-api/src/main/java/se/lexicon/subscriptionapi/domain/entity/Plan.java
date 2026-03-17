@@ -40,4 +40,8 @@ public class Plan {
     @Column(nullable = false)
     private LocalDateTime updatedAt;
 
+    @ManyToOne
+    @JoinColumn(name = "operator_id", nullable = false)
+    private Operator operator;
+
 }
