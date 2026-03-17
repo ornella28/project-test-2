@@ -42,4 +42,29 @@ public class Subscription {
 
     @Column(nullable = false)
     private LocalDateTime updatedAt;
+
+    @PrePersist
+    protected void onCreate() {
+        LocalDateTime now = LocalDateTime.now();
+        this.createdAt = now;
+        this.updatedAt = now;
+
+        if (this.startDate == null) {
+            this.startDate = now;
+        }
+
+        if (this.status == null) {
+            this.status = SubscriptionStatus.ACTIVE;
+        }
+    }
+
+    @PreUpdate
+    protected void onUpdate() {
+        this.updatedAt = LocalDateTime.now();
+    }
+
+
+
+
+
 }

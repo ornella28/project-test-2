@@ -18,4 +18,6 @@ public interface PlanRepository extends JpaRepository<Plan, Long> {
     List<Plan> findByOperatorId(Long operatorId);
     List<Plan> findByOperatorIdAndActiveTrue(Long operatorId);
     List<Plan> findByOperatorIdAndActiveTrueAndServiceType(Long operatorId, ServiceType serviceType);
+
+
 }
