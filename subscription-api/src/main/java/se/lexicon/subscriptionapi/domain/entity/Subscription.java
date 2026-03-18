@@ -1,10 +1,7 @@
 package se.lexicon.subscriptionapi.domain.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import se.lexicon.subscriptionapi.domain.constant.SubscriptionStatus;
 
 import java.time.LocalDateTime;
@@ -14,6 +11,7 @@ import java.time.LocalDateTime;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 @Table(name = "subscriptions")
 public class Subscription {
 
