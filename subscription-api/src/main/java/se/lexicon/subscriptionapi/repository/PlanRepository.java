@@ -3,9 +3,8 @@ package se.lexicon.subscriptionapi.repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import org.springframework.validation.annotation.Validated;
-import se.lexicon.subscriptionapi.domain.entity.Operator;
 import se.lexicon.subscriptionapi.domain.entity.Plan;
-import se.lexicon.subscriptionapi.domain.entity.ServiceType;
+import se.lexicon.subscriptionapi.domain.constant.ServiceType;
 
 import java.util.List;
 

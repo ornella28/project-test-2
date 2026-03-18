@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import se.lexicon.subscriptionapi.domain.constant.SubscriptionStatus;
 
 import java.time.LocalDateTime;
 

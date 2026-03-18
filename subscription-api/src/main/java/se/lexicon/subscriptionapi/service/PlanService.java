@@ -1,6 +1,6 @@
 package se.lexicon.subscriptionapi.service;
 
-import se.lexicon.subscriptionapi.domain.entity.ServiceType;
+import se.lexicon.subscriptionapi.domain.constant.ServiceType;
 import se.lexicon.subscriptionapi.dto.request.PlanRequest;
 import se.lexicon.subscriptionapi.dto.response.PlanResponse;
 

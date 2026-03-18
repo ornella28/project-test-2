@@ -3,7 +3,7 @@ package se.lexicon.subscriptionapi.dto.request;
 import jakarta.validation.constraints.DecimalMin;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
-import se.lexicon.subscriptionapi.domain.entity.ServiceType;
+import se.lexicon.subscriptionapi.domain.constant.ServiceType;
 
 import java.math.BigDecimal;
 
